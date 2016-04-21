@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_22A5C008F11A41E9A68A127D36AFB351"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_285ADAB340664CBEBBF4F968F7DE1892"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -34,12 +40,6 @@
         "Entry"
         {
         "MsmKey" = "8:_789BE1AC0AE04549B07425FCB0673728"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BE271D893E234174AA1EED5AD94C8743"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -106,6 +106,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
             }
         }
     }
@@ -113,33 +121,75 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_28C3624EC9C247F5A9AC51851F95EE51"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_4FE0DE9DCF04415FAFBBCB8A718D29A8"
             {
-            "Name" = "8:cmd.exe"
+            "Name" = "8:zabbix_agentd.exe"
             "Condition" = "8:"
-            "Object" = "8:_BE271D893E234174AA1EED5AD94C8743"
+            "Object" = "8:_285ADAB340664CBEBBF4F968F7DE1892"
             "FileType" = "3:2"
             "InstallAction" = "3:1"
-            "Arguments" = "8:install.bat"
+            "Arguments" = "8:-i -c \"c:\\Program Files\\Zabbix Agent\\zabbix_agentd.conf\""
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_70EB845F_9909_4821_92B0_17BA62EC4AA6"
+            "Identifier" = "8:_372F6801_F8ED_4338_B346_C15ED800ECA2"
             "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:"
             }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_2E9340AE4F2545EA9D87119EA1F84279"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_5C608CDAF099419C8FD1E2C789DDB153"
             {
-            "Name" = "8:zabbix_get.exe"
+            "Name" = "8:zabbix_agentd.exe"
             "Condition" = "8:"
-            "Object" = "8:_789BE1AC0AE04549B07425FCB0673728"
+            "Object" = "8:_285ADAB340664CBEBBF4F968F7DE1892"
             "FileType" = "3:2"
-            "InstallAction" = "3:4"
-            "Arguments" = "8:/Uninstall"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:-x > test1.txt"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_4D6562A2_9C61_4DCB_9F30_CE405D1D0448"
+            "Identifier" = "8:_610159E7_E478_48A5_8511_7FE67B6D37C6"
             "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:-d"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_6EE251FADAE0456BA21EF22DB4E267DC"
+            {
+            "Name" = "8:zabbix_agentd.exe"
+            "Condition" = "8:"
+            "Object" = "8:_285ADAB340664CBEBBF4F968F7DE1892"
+            "FileType" = "3:2"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:-i -c \"c:\\Program Files\\Zabbix Agent\\zabbix_agentd.conf\" > test3.txt"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:3"
+            "Identifier" = "8:_B05F139E_B497_4023_8083_62313D8A2A6A"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_DBDAA0BF8D02403A94FB36DC576B7A03"
+            {
+            "Name" = "8:zabbix_agentd.exe"
+            "Condition" = "8:"
+            "Object" = "8:_285ADAB340664CBEBBF4F968F7DE1892"
+            "FileType" = "3:2"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:-d > test2.txt"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:2"
+            "Identifier" = "8:_7ED7A79E_C7A1_4071_AF22_AD6CCCB9F7A1"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_E6A33F7C05FE4C3BBEF66D5727C97371"
+            {
+            "Name" = "8:zabbix_agentd.exe"
+            "Condition" = "8:"
+            "Object" = "8:_285ADAB340664CBEBBF4F968F7DE1892"
+            "FileType" = "3:2"
+            "InstallAction" = "3:4"
+            "Arguments" = "8:-d"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_0F136CF8_6C59_4AE9_9755_919B738A84DC"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:"
             }
         }
         "DefaultFeature"
@@ -156,6 +206,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_22A5C008F11A41E9A68A127D36AFB351"
+            {
+            "SourcePath" = "8:additional.conf"
+            "TargetName" = "8:additional.conf"
+            "Tag" = "8:"
+            "Folder" = "8:_8ADFE6733F2143BDA701F6B05FA038C5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_285ADAB340664CBEBBF4F968F7DE1892"
             {
             "SourcePath" = "8:zabbix_agentd.exe"
@@ -220,26 +290,6 @@
             {
             "SourcePath" = "8:zabbix_get.exe"
             "TargetName" = "8:zabbix_get.exe"
-            "Tag" = "8:"
-            "Folder" = "8:_8ADFE6733F2143BDA701F6B05FA038C5"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BE271D893E234174AA1EED5AD94C8743"
-            {
-            "SourcePath" = "8:cmd.exe"
-            "TargetName" = "8:cmd.exe"
             "Tag" = "8:"
             "Folder" = "8:_8ADFE6733F2143BDA701F6B05FA038C5"
             "Condition" = "8:"
@@ -333,7 +383,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Zabbix Agent"
         "ProductCode" = "8:{2D70A2C2-4616-4E0E-8DDD-8169F3F7B3B1}"
-        "PackageCode" = "8:{C42E1D22-0653-4313-A89F-17EB2F9AD531}"
+        "PackageCode" = "8:{7D822277-8F6E-4987-A39A-E559865027A2}"
         "UpgradeCode" = "8:{4D19674C-4620-4873-A99E-F6FBF59E4729}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
