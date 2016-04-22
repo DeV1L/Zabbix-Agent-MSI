@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Zabbix Agent", "Zabbix Agent\Zabbix Agent.vdproj", "{51284DC9-6478-4615-968F-0CE4C5ECB6F4}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{CB5A2696-A38C-4736-8C89-B2F727162003}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
@@ -15,6 +17,8 @@ Global
 		{51284DC9-6478-4615-968F-0CE4C5ECB6F4}.Debug|Default.Build.0 = Debug
 		{51284DC9-6478-4615-968F-0CE4C5ECB6F4}.Release|Default.ActiveCfg = Release
 		{51284DC9-6478-4615-968F-0CE4C5ECB6F4}.Release|Default.Build.0 = Release
+		{CB5A2696-A38C-4736-8C89-B2F727162003}.Debug|Default.ActiveCfg = Debug
+		{CB5A2696-A38C-4736-8C89-B2F727162003}.Release|Default.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

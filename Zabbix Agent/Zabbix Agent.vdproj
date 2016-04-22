@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_10D08D8852D2478B8342C5D2254781EC"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_22A5C008F11A41E9A68A127D36AFB351"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -40,12 +46,6 @@
         "Entry"
         {
         "MsmKey" = "8:_789BE1AC0AE04549B07425FCB0673728"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_E67696C690544542AB632DE1BE47F29F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -121,7 +121,7 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_4FE0DE9DCF04415FAFBBCB8A718D29A8"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_184A879898554ADB872BDC061004C9B3"
             {
             "Name" = "8:zabbix_agentd.exe"
             "Condition" = "8:"
@@ -130,50 +130,36 @@
             "InstallAction" = "3:1"
             "Arguments" = "8:-i -c \"c:\\Program Files\\Zabbix Agent\\zabbix_agentd.conf\""
             "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_372F6801_F8ED_4338_B346_C15ED800ECA2"
-            "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_5C608CDAF099419C8FD1E2C789DDB153"
-            {
-            "Name" = "8:zabbix_agentd.exe"
-            "Condition" = "8:"
-            "Object" = "8:_285ADAB340664CBEBBF4F968F7DE1892"
-            "FileType" = "3:2"
-            "InstallAction" = "3:2"
-            "Arguments" = "8:-x > test1.txt"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_610159E7_E478_48A5_8511_7FE67B6D37C6"
-            "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_6EE251FADAE0456BA21EF22DB4E267DC"
-            {
-            "Name" = "8:zabbix_agentd.exe"
-            "Condition" = "8:"
-            "Object" = "8:_285ADAB340664CBEBBF4F968F7DE1892"
-            "FileType" = "3:2"
-            "InstallAction" = "3:2"
-            "Arguments" = "8:-i -c \"c:\\Program Files\\Zabbix Agent\\zabbix_agentd.conf\" > test3.txt"
-            "EntryPoint" = "8:"
             "Sequence" = "3:3"
-            "Identifier" = "8:_B05F139E_B497_4023_8083_62313D8A2A6A"
+            "Identifier" = "8:_111EBA13_1324_4C22_AB64_993AE2A73FB4"
             "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:"
             }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_DBDAA0BF8D02403A94FB36DC576B7A03"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_CBF33A657DCC46FFA05EC0307772A082"
             {
             "Name" = "8:zabbix_agentd.exe"
             "Condition" = "8:"
             "Object" = "8:_285ADAB340664CBEBBF4F968F7DE1892"
             "FileType" = "3:2"
-            "InstallAction" = "3:2"
-            "Arguments" = "8:-d > test2.txt"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:-d"
             "EntryPoint" = "8:"
             "Sequence" = "3:2"
-            "Identifier" = "8:_7ED7A79E_C7A1_4071_AF22_AD6CCCB9F7A1"
+            "Identifier" = "8:_998D7EC7_645A_4025_8F76_D43EEAF78388"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_E142FEA77FDA4D61AAAE42A5055C8172"
+            {
+            "Name" = "8:zabbix_agentd.exe"
+            "Condition" = "8:"
+            "Object" = "8:_285ADAB340664CBEBBF4F968F7DE1892"
+            "FileType" = "3:2"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:-d"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_D032EAAE_33C6_4ABD_824A_E2A828215394"
             "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:"
             }
@@ -206,6 +192,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_10D08D8852D2478B8342C5D2254781EC"
+            {
+            "SourcePath" = "8:install.bat"
+            "TargetName" = "8:install.bat"
+            "Tag" = "8:"
+            "Folder" = "8:_8ADFE6733F2143BDA701F6B05FA038C5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_22A5C008F11A41E9A68A127D36AFB351"
             {
             "SourcePath" = "8:additional.conf"
@@ -306,26 +312,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E67696C690544542AB632DE1BE47F29F"
-            {
-            "SourcePath" = "8:install.bat"
-            "TargetName" = "8:install.bat"
-            "Tag" = "8:"
-            "Folder" = "8:_8ADFE6733F2143BDA701F6B05FA038C5"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
         }
         "FileType"
         {
@@ -383,7 +369,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Zabbix Agent"
         "ProductCode" = "8:{2D70A2C2-4616-4E0E-8DDD-8169F3F7B3B1}"
-        "PackageCode" = "8:{7D822277-8F6E-4987-A39A-E559865027A2}"
+        "PackageCode" = "8:{B71686F0-CE3E-47AC-B938-A573C086F709}"
         "UpgradeCode" = "8:{4D19674C-4620-4873-A99E-F6FBF59E4729}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
