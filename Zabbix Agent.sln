@@ -5,20 +5,21 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Zabbix Agent", "Zabbix Agent\Zabbix Agent.vdproj", "{51284DC9-6478-4615-968F-0CE4C5ECB6F4}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{CB5A2696-A38C-4736-8C89-B2F727162003}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Zabbix Agent Krasnodar", "Zabbix Agent Krasnodar\Zabbix Agent Krasnodar.vdproj", "{DD8A1BE2-B105-491E-8BA8-7CCB7B022A2A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Zabbix Agent NewYork", "Zabbix Agent NewYork\Zabbix Agent NewYork.vdproj", "{EE796A9E-48EE-46BE-A068-EA65C0AFE21E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Default = Debug|Default
 		Release|Default = Release|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{51284DC9-6478-4615-968F-0CE4C5ECB6F4}.Debug|Default.ActiveCfg = Debug
-		{51284DC9-6478-4615-968F-0CE4C5ECB6F4}.Debug|Default.Build.0 = Debug
 		{51284DC9-6478-4615-968F-0CE4C5ECB6F4}.Release|Default.ActiveCfg = Release
 		{51284DC9-6478-4615-968F-0CE4C5ECB6F4}.Release|Default.Build.0 = Release
-		{CB5A2696-A38C-4736-8C89-B2F727162003}.Debug|Default.ActiveCfg = Debug
-		{CB5A2696-A38C-4736-8C89-B2F727162003}.Release|Default.ActiveCfg = Release
+		{DD8A1BE2-B105-491E-8BA8-7CCB7B022A2A}.Release|Default.ActiveCfg = Release
+		{DD8A1BE2-B105-491E-8BA8-7CCB7B022A2A}.Release|Default.Build.0 = Release
+		{EE796A9E-48EE-46BE-A068-EA65C0AFE21E}.Release|Default.ActiveCfg = Release
+		{EE796A9E-48EE-46BE-A068-EA65C0AFE21E}.Release|Default.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
