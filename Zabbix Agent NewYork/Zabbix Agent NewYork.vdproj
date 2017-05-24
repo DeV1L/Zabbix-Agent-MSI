@@ -345,7 +345,7 @@
         "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:Arkadium"
         "ARPHELPTELEPHONE" = "8:"
-        "ARPHELPLINK" = "8:"
+        "ARPHELPLINK" = "8:https://wiki.arkadium.com/"
         "Title" = "8:Zabbix Agent NewYork"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Arkadium IT Team"
