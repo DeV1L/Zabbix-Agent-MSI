@@ -295,7 +295,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Zabbix Agent"
         "ProductCode" = "8:{DECE6BA9-1B17-49E4-93EE-2139EBDBE6C0}"
-        "PackageCode" = "8:{CE4A8729-7E7C-474A-AF14-869B8DE5E2E6}"
+        "PackageCode" = "8:{F95B0166-8E19-4FDE-A426-FAF3117CA320}"
         "UpgradeCode" = "8:{288EB38C-2F79-4657-89CB-05A0CFF2E0AF}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -420,7 +420,7 @@
                                                     "Condition" = "8:"
                                                     "Transitive" = "11:FALSE"
                                                     "ValueTypes" = "3:1"
-                                                    "Value" = "8:##%\"C:\\Program Files\\Zabbix Agent\\zabbix_agentd.exe\" --config \"c:\\Program Files\\Zabbix Agent\\zabbix_agentd.conf\""
+                                                    "Value" = "8:\"C:\\Program Files\\Zabbix Agent\\zabbix_agentd.exe\" --config \"c:\\Program Files\\Zabbix Agent\\zabbix_agentd.conf\""
                                                     }
                                                 }
                                             }
