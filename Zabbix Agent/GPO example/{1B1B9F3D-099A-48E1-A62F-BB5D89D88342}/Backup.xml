@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (c) Microsoft Corporation.  All rights reserved. --><GroupPolicyBackupScheme bkp:version="2.0" bkp:type="GroupPolicyBackupTemplate" xmlns:bkp="http://www.microsoft.com/GroupPolicy/GPOOperations" xmlns="http://www.microsoft.com/GroupPolicy/GPOOperations">
+    <GroupPolicyObject><SecurityGroups><Group bkp:Source="FromDACL"><Sid><![CDATA[S-1-5-21-3969029676-3714484767-3333023817-512]]></Sid><SamAccountName><![CDATA[Domain Admins]]></SamAccountName><Type><![CDATA[GlobalGroup]]></Type><NetBIOSDomainName><![CDATA[SIMFY]]></NetBIOSDomainName><DnsDomainName><![CDATA[simfy.arkadium.com]]></DnsDomainName><UPN><![CDATA[Domain Admins@simfy.arkadium.com]]></UPN></Group><Group bkp:Source="FromDACL"><Sid><![CDATA[S-1-5-21-3969029676-3714484767-3333023817-2777]]></Sid><SamAccountName><![CDATA[GPO_filtering]]></SamAccountName><Type><![CDATA[GlobalGroup]]></Type><NetBIOSDomainName><![CDATA[SIMFY]]></NetBIOSDomainName><DnsDomainName><![CDATA[simfy.arkadium.com]]></DnsDomainName><UPN><![CDATA[GPO_filtering@simfy.arkadium.com]]></UPN></Group><Group bkp:Source="FromDACL"><Sid><![CDATA[S-1-5-21-3599182248-2372726845-555129452-519]]></Sid><SamAccountName><![CDATA[Enterprise Admins]]></SamAccountName><Type><![CDATA[UniversalGroup]]></Type><NetBIOSDomainName><![CDATA[ARKADIUM]]></NetBIOSDomainName><DnsDomainName><![CDATA[arkadium.com]]></DnsDomainName><UPN><![CDATA[Enterprise Admins@arkadium.com]]></UPN></Group></SecurityGroups><FilePaths><Path><![CDATA[\\arkadium.com\DFS\DistributionPoint\Zabbix Agent]]></Path></FilePaths><GroupPolicyCoreSettings><ID><![CDATA[{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}]]></ID><Domain><![CDATA[simfy.arkadium.com]]></Domain><SecurityDescriptor>01 00 04 9c 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 04 00 0c 01 08 00 00 00 05 02 38 00 00 01 00 00 01 00 00 00 8f fd ac ed b3 ff d1 11 b4 1d 00 a0 c9 68 f9 39 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 00 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 02 24 00 14 00 02 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 02 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 02 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 a8 29 87 d6 3d f0 6c 8d 6c 9a 16 21 07 02 00 00 00 02 14 00 94 00 02 00 01 01 00 00 00 00 00 05 09 00 00 00 00 02 14 00 ff 00 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 00 0a 14 00 ff 00 0f 00 01 01 00 00 00 00 00 03 00 00 00 00</SecurityDescriptor><DisplayName><![CDATA[Zabbix Agent Install]]></DisplayName><Options><![CDATA[1]]></Options><UserVersionNumber><![CDATA[0]]></UserVersionNumber><MachineVersionNumber><![CDATA[3604535]]></MachineVersionNumber><MachineExtensionGuids><![CDATA[[{00000000-0000-0000-0000-000000000000}{CC5746A9-9B74-4BE5-AE2E-64379C86E0E4}][{91FBB303-0CD5-4055-BF42-E512A681B325}{CC5746A9-9B74-4BE5-AE2E-64379C86E0E4}][{C6DC5466-785A-11D2-84D0-00C04FB169F7}{942A8E4F-A261-11D1-A760-00C04FB9603F}]]]></MachineExtensionGuids><UserExtensionGuids/><WMIFilter/></GroupPolicyCoreSettings> 
+        <GroupPolicyExtension bkp:ID="{35378EAC-683F-11D2-A89A-00C04FBBCFA2}" bkp:DescName="Registry">
+            
+            
+            <FSObjectFile bkp:Path="%GPO_FSPATH%\Adm\*.*" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Adm\*.*"/>
+        </GroupPolicyExtension>
+        
+        
+        
+        
+        
+        
+        
+        
+        <GroupPolicyExtension bkp:ID="{c6dc5466-785a-11d2-84d0-00c04fb169f7}" bkp:DescName="Software Installation">
+            
+        <DSObject bkp:Path="cn=Class Store,%GPO_MACH_DSPATH%" bkp:ObjectClass="classStore" bkp:SourceExpandedPath="cn=Class Store,cn=Machine,cn={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=Policies,CN=System,DC=simfy,DC=arkadium,DC=com">
+                <DSObject bkp:Path="cn=Packages,cn=Class Store,%GPO_MACH_DSPATH%" bkp:ObjectClass="classStore" bkp:SourceExpandedPath="cn=Packages,cn=Class Store,cn=Machine,cn={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=Policies,CN=System,DC=simfy,DC=arkadium,DC=com">
+                    <DSObject bkp:Path="*,cn=Packages,cn=Class Store,%GPO_MACH_DSPATH%" bkp:ObjectClass="packageRegistration" bkp:SourceExpandedPath="*,cn=Packages,cn=Class Store,cn=Machine,cn={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=Policies,CN=System,DC=simfy,DC=arkadium,DC=com" bkp:ReEvaluateFunction="SIProcessAllPackageObjects"><DSObject bkp:ObjectClass="packageRegistration" bkp:Path="CN=c1fa92c7-69d5-4075-a23a-002806f997d9,CN=Packages,CN=Class Store,%GPO_MACH_DSPATH%" bkp:SourceExpandedPath="CN=c1fa92c7-69d5-4075-a23a-002806f997d9,CN=Packages,CN=Class Store,cn=Machine,cn={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=Policies,CN=System,DC=simfy,DC=arkadium,DC=com" bkp:ReEvaluateFunction="SIProcessPackageObject"><FSObjectFile bkp:Path="%GPO_MACH_FSPATH%\Applications\{BACE1318-B475-40A0-B78A-F7371C0E89B1}.aas" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{BACE1318-B475-40A0-B78A-F7371C0E89B1}.aas" bkp:Location="DomainSysvol\GPO\Machine\Applications\{BACE1318-B475-40A0-B78A-F7371C0E89B1}.aas"/>
+                        <SecurityDescriptor>01 00 04 8c 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 04 00 34 01 0a 00 00 00 00 00 24 00 ff 01 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 00 14 00 94 00 02 00 01 01 00 00 00 00 00 05 0b 00 00 00 00 00 14 00 ff 01 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 05 12 38 00 00 01 00 00 01 00 00 00 8f fd ac ed b3 ff d1 11 b4 1d 00 a0 c9 68 f9 39 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 14 00 02 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 a8 29 87 d6 3d f0 6c 8d 6c 9a 16 21 07 02 00 00 00 12 14 00 94 00 02 00 01 01 00 00 00 00 00 05 09 00 00 00 00 12 14 00 ff 00 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 00 1a 14 00 ff 00 0f 00 01 01 00 00 00 00 00 03 00 00 00 00</SecurityDescriptor>
+                        <DSAttributeBinary bkp:DSAttrName="objectGUID"><DSValue><![CDATA[97 81 87 c6 dd 81 4a 48 90 0e 08 cc e6 85 82 29]]></DSValue></DSAttributeBinary>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMClassID"><DSValue><![CDATA[00000000-0000-0000-0000-000000000000:0]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMProgID"/>
+                        <DSAttributeMultiString bkp:DSAttrName="fileExtPriority"/>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="localeID"><DSValue><![CDATA[1033]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="machineArchitecture"><DSValue><![CDATA[150996226]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberHi"><DSValue><![CDATA[1]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberLo"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="revision"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageType"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageFlags"><DSValue><![CDATA[2684354832]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeString bkp:DSAttrName="packageName"><DSValue><![CDATA[Zabbix Agent]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptPath"><DSValue><![CDATA[\\simfy.arkadium.com\SysVol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{BACE1318-B475-40A0-B78A-F7371C0E89B1}.aas]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptName"><DSValue><![CDATA[R]]></DSValue></DSAttributeString>
+                        <DSAttributeDWORD bkp:DSAttrName="msiScriptSize"/>
+                        <DSAttributeMultiString bkp:DSAttrName="url"><DSValue><![CDATA[https://wiki.arkadium.com/]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeString bkp:DSAttrName="setupCommand"/>
+                        <DSAttributeString bkp:DSAttrName="lastUpdateSequence"><DSValue><![CDATA[20170525093441]]></DSValue></DSAttributeString>
+                        <DSAttributeMultiString bkp:DSAttrName="msiFileList"><DSValue><![CDATA[0:\\arkadium.com\DFS\DistributionPoint\Zabbix Agent\Zabbix Agent KRD.msi]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="categories"/>
+                        <DSAttributeMultiString bkp:DSAttrName="canUpgradeScript"/>
+                        <DSAttributeDWORD bkp:DSAttrName="installUiLevel"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeBinary bkp:DSAttrName="msiScript"/>
+                        <DSAttributeString bkp:DSAttrName="displayName"><DSValue><![CDATA[Zabbix Agent]]></DSValue></DSAttributeString>
+                        <DSAttributeBinary bkp:DSAttrName="productCode"><DSValue><![CDATA[20 27 76 68 7b 1b 2d 41 b4 bb c8 a9 61 c0 a8 99]]></DSValue></DSAttributeBinary>
+                        <DSAttributeBinary bkp:DSAttrName="upgradeProductCode"><DSValue><![CDATA[8c b3 8e 28 79 2f 57 46 89 cb 05 a0 cf f2 e0 af]]></DSValue></DSAttributeBinary>
+                        <DSAttributeString bkp:DSAttrName="Vendor"/>
+                    </DSObject><DSObject bkp:ObjectClass="packageRegistration" bkp:Path="CN=b705e3eb-c936-4ad1-97c5-7fa143dbc12b,CN=Packages,CN=Class Store,%GPO_MACH_DSPATH%" bkp:SourceExpandedPath="CN=b705e3eb-c936-4ad1-97c5-7fa143dbc12b,CN=Packages,CN=Class Store,cn=Machine,cn={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=Policies,CN=System,DC=simfy,DC=arkadium,DC=com" bkp:ReEvaluateFunction="SIProcessPackageObject"><FSObjectFile bkp:Path="%GPO_MACH_FSPATH%\Applications\{316BC5B5-D0F4-4A97-B887-99CC60BF602C}.aas" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{316BC5B5-D0F4-4A97-B887-99CC60BF602C}.aas" bkp:Location="DomainSysvol\GPO\Machine\Applications\{316BC5B5-D0F4-4A97-B887-99CC60BF602C}.aas"/>
+                        <SecurityDescriptor>01 00 04 8c 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 04 00 34 01 0a 00 00 00 00 00 24 00 ff 01 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 00 14 00 94 00 02 00 01 01 00 00 00 00 00 05 0b 00 00 00 00 00 14 00 ff 01 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 05 12 38 00 00 01 00 00 01 00 00 00 8f fd ac ed b3 ff d1 11 b4 1d 00 a0 c9 68 f9 39 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 14 00 02 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 a8 29 87 d6 3d f0 6c 8d 6c 9a 16 21 07 02 00 00 00 12 14 00 94 00 02 00 01 01 00 00 00 00 00 05 09 00 00 00 00 12 14 00 ff 00 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 00 1a 14 00 ff 00 0f 00 01 01 00 00 00 00 00 03 00 00 00 00</SecurityDescriptor>
+                        <DSAttributeBinary bkp:DSAttrName="objectGUID"><DSValue><![CDATA[16 a9 1f f8 7d 0d cb 4c ba c2 04 c2 33 91 6d d7]]></DSValue></DSAttributeBinary>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMClassID"><DSValue><![CDATA[00000000-0000-0000-0000-000000000000:0]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMProgID"/>
+                        <DSAttributeMultiString bkp:DSAttrName="fileExtPriority"/>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="localeID"><DSValue><![CDATA[1033]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="machineArchitecture"><DSValue><![CDATA[150996226]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberHi"><DSValue><![CDATA[1]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberLo"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="revision"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageType"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageFlags"><DSValue><![CDATA[2684354832]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeString bkp:DSAttrName="packageName"><DSValue><![CDATA[Zabbix Agent (2)]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptPath"><DSValue><![CDATA[\\simfy.arkadium.com\SysVol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{316BC5B5-D0F4-4A97-B887-99CC60BF602C}.aas]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptName"><DSValue><![CDATA[R]]></DSValue></DSAttributeString>
+                        <DSAttributeDWORD bkp:DSAttrName="msiScriptSize"/>
+                        <DSAttributeMultiString bkp:DSAttrName="url"><DSValue><![CDATA[https://wiki.arkadium.com/]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeString bkp:DSAttrName="setupCommand"/>
+                        <DSAttributeString bkp:DSAttrName="lastUpdateSequence"><DSValue><![CDATA[20170524165622]]></DSValue></DSAttributeString>
+                        <DSAttributeMultiString bkp:DSAttrName="msiFileList"><DSValue><![CDATA[0:\\arkadium.com\DFS\DistributionPoint\Zabbix Agent\Zabbix Agent KRD.msi]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="categories"/>
+                        <DSAttributeMultiString bkp:DSAttrName="canUpgradeScript"/>
+                        <DSAttributeDWORD bkp:DSAttrName="installUiLevel"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeBinary bkp:DSAttrName="msiScript"/>
+                        <DSAttributeString bkp:DSAttrName="displayName"><DSValue><![CDATA[Zabbix Agent (2)]]></DSValue></DSAttributeString>
+                        <DSAttributeBinary bkp:DSAttrName="productCode"><DSValue><![CDATA[a9 6b ce de 17 1b e4 49 93 ee 21 39 eb db e6 c0]]></DSValue></DSAttributeBinary>
+                        <DSAttributeBinary bkp:DSAttrName="upgradeProductCode"><DSValue><![CDATA[8c b3 8e 28 79 2f 57 46 89 cb 05 a0 cf f2 e0 af]]></DSValue></DSAttributeBinary>
+                        <DSAttributeString bkp:DSAttrName="Vendor"/>
+                    </DSObject><DSObject bkp:ObjectClass="packageRegistration" bkp:Path="CN=847311bb-e62e-42eb-9695-16d8a11ff61b,CN=Packages,CN=Class Store,%GPO_MACH_DSPATH%" bkp:SourceExpandedPath="CN=847311bb-e62e-42eb-9695-16d8a11ff61b,CN=Packages,CN=Class Store,cn=Machine,cn={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=Policies,CN=System,DC=simfy,DC=arkadium,DC=com" bkp:ReEvaluateFunction="SIProcessPackageObject"><FSObjectFile bkp:Path="%GPO_MACH_FSPATH%\Applications\{88A091A2-D234-4F9F-98F5-3068DCA5AEBF}.aas" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{88A091A2-D234-4F9F-98F5-3068DCA5AEBF}.aas" bkp:Location="DomainSysvol\GPO\Machine\Applications\{88A091A2-D234-4F9F-98F5-3068DCA5AEBF}.aas"/>
+                        <SecurityDescriptor>01 00 04 8c 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 04 00 34 01 0a 00 00 00 00 00 24 00 ff 01 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 00 14 00 94 00 02 00 01 01 00 00 00 00 00 05 0b 00 00 00 00 00 14 00 ff 01 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 05 12 38 00 00 01 00 00 01 00 00 00 8f fd ac ed b3 ff d1 11 b4 1d 00 a0 c9 68 f9 39 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 14 00 02 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 a8 29 87 d6 3d f0 6c 8d 6c 9a 16 21 07 02 00 00 00 12 14 00 94 00 02 00 01 01 00 00 00 00 00 05 09 00 00 00 00 12 14 00 ff 00 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 00 1a 14 00 ff 00 0f 00 01 01 00 00 00 00 00 03 00 00 00 00</SecurityDescriptor>
+                        <DSAttributeBinary bkp:DSAttrName="objectGUID"><DSValue><![CDATA[c4 36 0a 5e 9f d8 b0 45 98 5e 2d ad 9b 61 80 76]]></DSValue></DSAttributeBinary>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMClassID"><DSValue><![CDATA[00000000-0000-0000-0000-000000000000:0]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMProgID"/>
+                        <DSAttributeMultiString bkp:DSAttrName="fileExtPriority"/>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="localeID"><DSValue><![CDATA[1033]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="machineArchitecture"><DSValue><![CDATA[150996226]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberHi"><DSValue><![CDATA[1]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberLo"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="revision"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageType"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageFlags"><DSValue><![CDATA[2684374128]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeString bkp:DSAttrName="packageName"><DSValue><![CDATA[Zabbix Agent]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptPath"><DSValue><![CDATA[\\simfy.arkadium.com\SysVol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{88A091A2-D234-4F9F-98F5-3068DCA5AEBF}.aas]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptName"><DSValue><![CDATA[A]]></DSValue></DSAttributeString>
+                        <DSAttributeDWORD bkp:DSAttrName="msiScriptSize"/>
+                        <DSAttributeMultiString bkp:DSAttrName="url"><DSValue><![CDATA[https://wiki.arkadium.com/]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeString bkp:DSAttrName="setupCommand"/>
+                        <DSAttributeString bkp:DSAttrName="lastUpdateSequence"><DSValue><![CDATA[20170525100923]]></DSValue></DSAttributeString>
+                        <DSAttributeMultiString bkp:DSAttrName="msiFileList"><DSValue><![CDATA[0:\\arkadium.com\DFS\DistributionPoint\Zabbix Agent\Zabbix Agent KRD.msi]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="categories"/>
+                        <DSAttributeMultiString bkp:DSAttrName="canUpgradeScript"/>
+                        <DSAttributeDWORD bkp:DSAttrName="installUiLevel"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeBinary bkp:DSAttrName="msiScript"/>
+                        <DSAttributeString bkp:DSAttrName="displayName"><DSValue><![CDATA[Zabbix Agent]]></DSValue></DSAttributeString>
+                        <DSAttributeBinary bkp:DSAttrName="productCode"><DSValue><![CDATA[df 73 22 67 55 24 c7 4e 9f 0b 56 b1 0c 5f d9 3d]]></DSValue></DSAttributeBinary>
+                        <DSAttributeBinary bkp:DSAttrName="upgradeProductCode"><DSValue><![CDATA[8c b3 8e 28 79 2f 57 46 89 cb 05 a0 cf f2 e0 af]]></DSValue></DSAttributeBinary>
+                        <DSAttributeString bkp:DSAttrName="Vendor"/>
+                    </DSObject><DSObject bkp:ObjectClass="packageRegistration" bkp:Path="CN=7947c009-d594-4bbf-b472-76ad9ba20d17,CN=Packages,CN=Class Store,%GPO_MACH_DSPATH%" bkp:SourceExpandedPath="CN=7947c009-d594-4bbf-b472-76ad9ba20d17,CN=Packages,CN=Class Store,cn=Machine,cn={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=Policies,CN=System,DC=simfy,DC=arkadium,DC=com" bkp:ReEvaluateFunction="SIProcessPackageObject"><FSObjectFile bkp:Path="%GPO_MACH_FSPATH%\Applications\{458FB4E7-F46D-47F6-B70B-74D8B20D13C2}.aas" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{458FB4E7-F46D-47F6-B70B-74D8B20D13C2}.aas" bkp:Location="DomainSysvol\GPO\Machine\Applications\{458FB4E7-F46D-47F6-B70B-74D8B20D13C2}.aas"/>
+                        <SecurityDescriptor>01 00 04 8c 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 04 00 34 01 0a 00 00 00 00 00 24 00 ff 01 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 00 14 00 94 00 02 00 01 01 00 00 00 00 00 05 0b 00 00 00 00 00 14 00 ff 01 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 05 12 38 00 00 01 00 00 01 00 00 00 8f fd ac ed b3 ff d1 11 b4 1d 00 a0 c9 68 f9 39 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 14 00 02 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 a8 29 87 d6 3d f0 6c 8d 6c 9a 16 21 07 02 00 00 00 12 14 00 94 00 02 00 01 01 00 00 00 00 00 05 09 00 00 00 00 12 14 00 ff 00 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 00 1a 14 00 ff 00 0f 00 01 01 00 00 00 00 00 03 00 00 00 00</SecurityDescriptor>
+                        <DSAttributeBinary bkp:DSAttrName="objectGUID"><DSValue><![CDATA[46 5c 98 6e 07 75 c5 4b 89 15 f9 1b 17 ef 12 5a]]></DSValue></DSAttributeBinary>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMClassID"><DSValue><![CDATA[00000000-0000-0000-0000-000000000000:0]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMProgID"/>
+                        <DSAttributeMultiString bkp:DSAttrName="fileExtPriority"/>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="localeID"><DSValue><![CDATA[1033]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="machineArchitecture"><DSValue><![CDATA[150996226]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberHi"><DSValue><![CDATA[1]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberLo"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="revision"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageType"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageFlags"><DSValue><![CDATA[2684879120]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeString bkp:DSAttrName="packageName"><DSValue><![CDATA[Zabbix Agent Kr_v.0.4]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptPath"><DSValue><![CDATA[\\simfy.arkadium.com\SysVol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{458FB4E7-F46D-47F6-B70B-74D8B20D13C2}.aas]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptName"><DSValue><![CDATA[R]]></DSValue></DSAttributeString>
+                        <DSAttributeDWORD bkp:DSAttrName="msiScriptSize"/>
+                        <DSAttributeMultiString bkp:DSAttrName="url"/>
+                        <DSAttributeString bkp:DSAttrName="setupCommand"/>
+                        <DSAttributeString bkp:DSAttrName="lastUpdateSequence"><DSValue><![CDATA[20170524170721]]></DSValue></DSAttributeString>
+                        <DSAttributeMultiString bkp:DSAttrName="msiFileList"><DSValue><![CDATA[0:\\arkadium\dfs\DistributionPoint\Zabbix Agent\Zabbix Agent Kr_v.0.4.msi]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="categories"/>
+                        <DSAttributeMultiString bkp:DSAttrName="canUpgradeScript"/>
+                        <DSAttributeDWORD bkp:DSAttrName="installUiLevel"><DSValue><![CDATA[3]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeBinary bkp:DSAttrName="msiScript"/>
+                        <DSAttributeString bkp:DSAttrName="displayName"><DSValue><![CDATA[Zabbix Agent Kr_v.0.4]]></DSValue></DSAttributeString>
+                        <DSAttributeBinary bkp:DSAttrName="productCode"><DSValue><![CDATA[6a 01 9d f4 5a f1 9e 4f b4 bf 56 2b 9e 81 b3 a1]]></DSValue></DSAttributeBinary>
+                        <DSAttributeBinary bkp:DSAttrName="upgradeProductCode"><DSValue><![CDATA[a8 f4 d7 f2 71 d9 de 49 80 f8 fb 69 41 fc 74 4c]]></DSValue></DSAttributeBinary>
+                        <DSAttributeString bkp:DSAttrName="Vendor"/>
+                    </DSObject><DSObject bkp:ObjectClass="packageRegistration" bkp:Path="CN=3da98486-5dfc-4e3a-88de-9d0b735ebf2d,CN=Packages,CN=Class Store,%GPO_MACH_DSPATH%" bkp:SourceExpandedPath="CN=3da98486-5dfc-4e3a-88de-9d0b735ebf2d,CN=Packages,CN=Class Store,cn=Machine,cn={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=Policies,CN=System,DC=simfy,DC=arkadium,DC=com" bkp:ReEvaluateFunction="SIProcessPackageObject"><FSObjectFile bkp:Path="%GPO_MACH_FSPATH%\Applications\{B1CEF7A8-F38D-4088-82BB-AFDFE0771F82}.aas" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{B1CEF7A8-F38D-4088-82BB-AFDFE0771F82}.aas" bkp:Location="DomainSysvol\GPO\Machine\Applications\{B1CEF7A8-F38D-4088-82BB-AFDFE0771F82}.aas"/>
+                        <SecurityDescriptor>01 00 04 8c 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 04 00 34 01 0a 00 00 00 00 00 24 00 ff 01 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 00 14 00 94 00 02 00 01 01 00 00 00 00 00 05 0b 00 00 00 00 00 14 00 ff 01 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 05 12 38 00 00 01 00 00 01 00 00 00 8f fd ac ed b3 ff d1 11 b4 1d 00 a0 c9 68 f9 39 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 14 00 02 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 a8 29 87 d6 3d f0 6c 8d 6c 9a 16 21 07 02 00 00 00 12 14 00 94 00 02 00 01 01 00 00 00 00 00 05 09 00 00 00 00 12 14 00 ff 00 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 00 1a 14 00 ff 00 0f 00 01 01 00 00 00 00 00 03 00 00 00 00</SecurityDescriptor>
+                        <DSAttributeBinary bkp:DSAttrName="objectGUID"><DSValue><![CDATA[3a 47 e1 94 92 47 af 47 93 06 e2 4d d7 0f 07 47]]></DSValue></DSAttributeBinary>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMClassID"><DSValue><![CDATA[00000000-0000-0000-0000-000000000000:0]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMProgID"/>
+                        <DSAttributeMultiString bkp:DSAttrName="fileExtPriority"/>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="localeID"><DSValue><![CDATA[1033]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="machineArchitecture"><DSValue><![CDATA[150996226]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberHi"><DSValue><![CDATA[1]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberLo"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="revision"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageType"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageFlags"><DSValue><![CDATA[2684354832]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeString bkp:DSAttrName="packageName"><DSValue><![CDATA[Zabbix Agent (2)]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptPath"><DSValue><![CDATA[\\simfy.arkadium.com\SysVol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{B1CEF7A8-F38D-4088-82BB-AFDFE0771F82}.aas]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptName"><DSValue><![CDATA[R]]></DSValue></DSAttributeString>
+                        <DSAttributeDWORD bkp:DSAttrName="msiScriptSize"/>
+                        <DSAttributeMultiString bkp:DSAttrName="url"><DSValue><![CDATA[https://wiki.arkadium.com/]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeString bkp:DSAttrName="setupCommand"/>
+                        <DSAttributeString bkp:DSAttrName="lastUpdateSequence"><DSValue><![CDATA[20170525093436]]></DSValue></DSAttributeString>
+                        <DSAttributeMultiString bkp:DSAttrName="msiFileList"><DSValue><![CDATA[0:\\arkadium.com\DFS\DistributionPoint\Zabbix Agent\Zabbix Agent KRD.msi]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="categories"/>
+                        <DSAttributeMultiString bkp:DSAttrName="canUpgradeScript"/>
+                        <DSAttributeDWORD bkp:DSAttrName="installUiLevel"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeBinary bkp:DSAttrName="msiScript"/>
+                        <DSAttributeString bkp:DSAttrName="displayName"><DSValue><![CDATA[Zabbix Agent (2)]]></DSValue></DSAttributeString>
+                        <DSAttributeBinary bkp:DSAttrName="productCode"><DSValue><![CDATA[04 0c 49 13 a7 d4 cb 42 bc f1 7c 3c ff a4 2c 50]]></DSValue></DSAttributeBinary>
+                        <DSAttributeBinary bkp:DSAttrName="upgradeProductCode"><DSValue><![CDATA[8c b3 8e 28 79 2f 57 46 89 cb 05 a0 cf f2 e0 af]]></DSValue></DSAttributeBinary>
+                        <DSAttributeString bkp:DSAttrName="Vendor"/>
+                    </DSObject><DSObject bkp:ObjectClass="packageRegistration" bkp:Path="CN=34f2ae6e-94c9-49de-8c4b-fc122341792e,CN=Packages,CN=Class Store,%GPO_MACH_DSPATH%" bkp:SourceExpandedPath="CN=34f2ae6e-94c9-49de-8c4b-fc122341792e,CN=Packages,CN=Class Store,cn=Machine,cn={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=Policies,CN=System,DC=simfy,DC=arkadium,DC=com" bkp:ReEvaluateFunction="SIProcessPackageObject"><FSObjectFile bkp:Path="%GPO_MACH_FSPATH%\Applications\{7661B2CE-4CA8-49D6-9416-5E4D4FCA5AC7}.aas" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{7661B2CE-4CA8-49D6-9416-5E4D4FCA5AC7}.aas" bkp:Location="DomainSysvol\GPO\Machine\Applications\{7661B2CE-4CA8-49D6-9416-5E4D4FCA5AC7}.aas"/>
+                        <SecurityDescriptor>01 00 04 8c 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 04 00 34 01 0a 00 00 00 00 00 24 00 ff 01 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 00 14 00 94 00 02 00 01 01 00 00 00 00 00 05 0b 00 00 00 00 00 14 00 ff 01 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 05 12 38 00 00 01 00 00 01 00 00 00 8f fd ac ed b3 ff d1 11 b4 1d 00 a0 c9 68 f9 39 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 14 00 02 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 a8 29 87 d6 3d f0 6c 8d 6c 9a 16 21 07 02 00 00 00 12 14 00 94 00 02 00 01 01 00 00 00 00 00 05 09 00 00 00 00 12 14 00 ff 00 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 00 1a 14 00 ff 00 0f 00 01 01 00 00 00 00 00 03 00 00 00 00</SecurityDescriptor>
+                        <DSAttributeBinary bkp:DSAttrName="objectGUID"><DSValue><![CDATA[41 90 9e 0c 38 56 ef 44 a3 6a 27 44 f4 8d dc 33]]></DSValue></DSAttributeBinary>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMClassID"><DSValue><![CDATA[00000000-0000-0000-0000-000000000000:0]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMProgID"/>
+                        <DSAttributeMultiString bkp:DSAttrName="fileExtPriority"/>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="localeID"><DSValue><![CDATA[1033]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="machineArchitecture"><DSValue><![CDATA[150996226]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberHi"><DSValue><![CDATA[1]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberLo"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="revision"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageType"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageFlags"><DSValue><![CDATA[2684354832]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeString bkp:DSAttrName="packageName"><DSValue><![CDATA[Zabbix Agent]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptPath"><DSValue><![CDATA[\\simfy.arkadium.com\SysVol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{7661B2CE-4CA8-49D6-9416-5E4D4FCA5AC7}.aas]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptName"><DSValue><![CDATA[R]]></DSValue></DSAttributeString>
+                        <DSAttributeDWORD bkp:DSAttrName="msiScriptSize"/>
+                        <DSAttributeMultiString bkp:DSAttrName="url"><DSValue><![CDATA[https://wiki.arkadium.com/]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeString bkp:DSAttrName="setupCommand"/>
+                        <DSAttributeString bkp:DSAttrName="lastUpdateSequence"><DSValue><![CDATA[20170524214320]]></DSValue></DSAttributeString>
+                        <DSAttributeMultiString bkp:DSAttrName="msiFileList"><DSValue><![CDATA[0:\\arkadium.com\DFS\DistributionPoint\Zabbix Agent\Zabbix Agent KRD.msi]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="categories"/>
+                        <DSAttributeMultiString bkp:DSAttrName="canUpgradeScript"/>
+                        <DSAttributeDWORD bkp:DSAttrName="installUiLevel"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeBinary bkp:DSAttrName="msiScript"/>
+                        <DSAttributeString bkp:DSAttrName="displayName"><DSValue><![CDATA[Zabbix Agent]]></DSValue></DSAttributeString>
+                        <DSAttributeBinary bkp:DSAttrName="productCode"><DSValue><![CDATA[6e 90 06 08 7e 56 9f 4b 9b ab 4d ca cc 66 29 71]]></DSValue></DSAttributeBinary>
+                        <DSAttributeBinary bkp:DSAttrName="upgradeProductCode"><DSValue><![CDATA[8c b3 8e 28 79 2f 57 46 89 cb 05 a0 cf f2 e0 af]]></DSValue></DSAttributeBinary>
+                        <DSAttributeString bkp:DSAttrName="Vendor"/>
+                    </DSObject><DSObject bkp:ObjectClass="packageRegistration" bkp:Path="CN=21403c5c-f275-4949-929b-696d5a020835,CN=Packages,CN=Class Store,%GPO_MACH_DSPATH%" bkp:SourceExpandedPath="CN=21403c5c-f275-4949-929b-696d5a020835,CN=Packages,CN=Class Store,cn=Machine,cn={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=Policies,CN=System,DC=simfy,DC=arkadium,DC=com" bkp:ReEvaluateFunction="SIProcessPackageObject"><FSObjectFile bkp:Path="%GPO_MACH_FSPATH%\Applications\{61EAE6E5-F1C0-4052-AB1C-4B5CDE265F6D}.aas" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{61EAE6E5-F1C0-4052-AB1C-4B5CDE265F6D}.aas" bkp:Location="DomainSysvol\GPO\Machine\Applications\{61EAE6E5-F1C0-4052-AB1C-4B5CDE265F6D}.aas"/>
+                        <SecurityDescriptor>01 00 04 8c 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 04 00 34 01 0a 00 00 00 00 00 24 00 ff 01 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 00 14 00 94 00 02 00 01 01 00 00 00 00 00 05 0b 00 00 00 00 00 14 00 ff 01 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 05 12 38 00 00 01 00 00 01 00 00 00 8f fd ac ed b3 ff d1 11 b4 1d 00 a0 c9 68 f9 39 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 14 00 02 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 a8 29 87 d6 3d f0 6c 8d 6c 9a 16 21 07 02 00 00 00 12 14 00 94 00 02 00 01 01 00 00 00 00 00 05 09 00 00 00 00 12 14 00 ff 00 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 00 1a 14 00 ff 00 0f 00 01 01 00 00 00 00 00 03 00 00 00 00</SecurityDescriptor>
+                        <DSAttributeBinary bkp:DSAttrName="objectGUID"><DSValue><![CDATA[e6 88 0d a0 f4 96 7a 43 b1 d2 0b 30 44 e0 53 ae]]></DSValue></DSAttributeBinary>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMClassID"><DSValue><![CDATA[00000000-0000-0000-0000-000000000000:0]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMProgID"/>
+                        <DSAttributeMultiString bkp:DSAttrName="fileExtPriority"/>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="localeID"><DSValue><![CDATA[1033]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="machineArchitecture"><DSValue><![CDATA[150996226]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberHi"><DSValue><![CDATA[1]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberLo"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="revision"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageType"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageFlags"><DSValue><![CDATA[2684616976]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeString bkp:DSAttrName="packageName"><DSValue><![CDATA[Zabbix Agent (2)]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptPath"><DSValue><![CDATA[\\simfy.arkadium.com\SysVol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{61EAE6E5-F1C0-4052-AB1C-4B5CDE265F6D}.aas]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptName"><DSValue><![CDATA[R]]></DSValue></DSAttributeString>
+                        <DSAttributeDWORD bkp:DSAttrName="msiScriptSize"/>
+                        <DSAttributeMultiString bkp:DSAttrName="url"><DSValue><![CDATA[https://wiki.arkadium.com/]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeString bkp:DSAttrName="setupCommand"/>
+                        <DSAttributeString bkp:DSAttrName="lastUpdateSequence"><DSValue><![CDATA[20170524170711]]></DSValue></DSAttributeString>
+                        <DSAttributeMultiString bkp:DSAttrName="msiFileList"><DSValue><![CDATA[0:\\arkadium.com\DFS\DistributionPoint\Zabbix Agent\Zabbix Agent KRD.msi]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="categories"/>
+                        <DSAttributeMultiString bkp:DSAttrName="canUpgradeScript"><DSValue><![CDATA[LDAP://CN=Class Store,CN=Machine,CN={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=POLICIES,CN=SYSTEM,DC=SIMFY,DC=ARKADIUM,DC=COM\\709e5b2f-acbe-4f9a-abff-0ede92fa12ec:01]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeDWORD bkp:DSAttrName="installUiLevel"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeBinary bkp:DSAttrName="msiScript"/>
+                        <DSAttributeString bkp:DSAttrName="displayName"><DSValue><![CDATA[Zabbix Agent (2)]]></DSValue></DSAttributeString>
+                        <DSAttributeBinary bkp:DSAttrName="productCode"><DSValue><![CDATA[a9 6b ce de 17 1b e4 49 93 ee 21 39 eb db e6 c0]]></DSValue></DSAttributeBinary>
+                        <DSAttributeBinary bkp:DSAttrName="upgradeProductCode"><DSValue><![CDATA[8c b3 8e 28 79 2f 57 46 89 cb 05 a0 cf f2 e0 af]]></DSValue></DSAttributeBinary>
+                        <DSAttributeString bkp:DSAttrName="Vendor"/>
+                    </DSObject><DSObject bkp:ObjectClass="packageRegistration" bkp:Path="CN=0c3c0a31-99f7-4df7-a4df-9712df78cd53,CN=Packages,CN=Class Store,%GPO_MACH_DSPATH%" bkp:SourceExpandedPath="CN=0c3c0a31-99f7-4df7-a4df-9712df78cd53,CN=Packages,CN=Class Store,cn=Machine,cn={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=Policies,CN=System,DC=simfy,DC=arkadium,DC=com" bkp:ReEvaluateFunction="SIProcessPackageObject"><FSObjectFile bkp:Path="%GPO_MACH_FSPATH%\Applications\{391DFD8A-A7DB-4DE3-A70C-C6ECE3854DAD}.aas" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{391DFD8A-A7DB-4DE3-A70C-C6ECE3854DAD}.aas" bkp:Location="DomainSysvol\GPO\Machine\Applications\{391DFD8A-A7DB-4DE3-A70C-C6ECE3854DAD}.aas"/>
+                        <SecurityDescriptor>01 00 04 8c 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 04 00 34 01 0a 00 00 00 00 00 24 00 ff 01 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 00 14 00 94 00 02 00 01 01 00 00 00 00 00 05 0b 00 00 00 00 00 14 00 ff 01 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 05 12 38 00 00 01 00 00 01 00 00 00 8f fd ac ed b3 ff d1 11 b4 1d 00 a0 c9 68 f9 39 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 14 00 02 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 a8 29 87 d6 3d f0 6c 8d 6c 9a 16 21 07 02 00 00 00 12 14 00 94 00 02 00 01 01 00 00 00 00 00 05 09 00 00 00 00 12 14 00 ff 00 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 00 1a 14 00 ff 00 0f 00 01 01 00 00 00 00 00 03 00 00 00 00</SecurityDescriptor>
+                        <DSAttributeBinary bkp:DSAttrName="objectGUID"><DSValue><![CDATA[2f 5b 9e 70 be ac 9a 4f ab ff 0e de 92 fa 12 ec]]></DSValue></DSAttributeBinary>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMClassID"><DSValue><![CDATA[00000000-0000-0000-0000-000000000000:0]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMProgID"/>
+                        <DSAttributeMultiString bkp:DSAttrName="fileExtPriority"/>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="localeID"><DSValue><![CDATA[1033]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="machineArchitecture"><DSValue><![CDATA[150996226]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberHi"><DSValue><![CDATA[1]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberLo"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="revision"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageType"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageFlags"><DSValue><![CDATA[2684616976]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeString bkp:DSAttrName="packageName"><DSValue><![CDATA[Zabbix Agent]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptPath"><DSValue><![CDATA[\\simfy.arkadium.com\SysVol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{391DFD8A-A7DB-4DE3-A70C-C6ECE3854DAD}.aas]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptName"><DSValue><![CDATA[R]]></DSValue></DSAttributeString>
+                        <DSAttributeDWORD bkp:DSAttrName="msiScriptSize"/>
+                        <DSAttributeMultiString bkp:DSAttrName="url"/>
+                        <DSAttributeString bkp:DSAttrName="setupCommand"/>
+                        <DSAttributeString bkp:DSAttrName="lastUpdateSequence"><DSValue><![CDATA[20170524170716]]></DSValue></DSAttributeString>
+                        <DSAttributeMultiString bkp:DSAttrName="msiFileList"><DSValue><![CDATA[0:\\arkadium.com\DFS\DistributionPoint\Zabbix Agent\Zabbix Agent KRD.msi]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="categories"/>
+                        <DSAttributeMultiString bkp:DSAttrName="canUpgradeScript"><DSValue><![CDATA[LDAP://CN=Class Store,CN=Machine,CN={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=POLICIES,CN=SYSTEM,DC=SIMFY,DC=ARKADIUM,DC=COM\\6e985c46-7507-4bc5-8915-f91b17ef125a:01]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeDWORD bkp:DSAttrName="installUiLevel"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeBinary bkp:DSAttrName="msiScript"/>
+                        <DSAttributeString bkp:DSAttrName="displayName"><DSValue><![CDATA[Zabbix Agent]]></DSValue></DSAttributeString>
+                        <DSAttributeBinary bkp:DSAttrName="productCode"><DSValue><![CDATA[d1 72 35 74 e3 4c 4b 41 91 21 6b 72 40 5a 59 56]]></DSValue></DSAttributeBinary>
+                        <DSAttributeBinary bkp:DSAttrName="upgradeProductCode"><DSValue><![CDATA[8c b3 8e 28 79 2f 57 46 89 cb 05 a0 cf f2 e0 af]]></DSValue></DSAttributeBinary>
+                        <DSAttributeString bkp:DSAttrName="Vendor"/>
+                    </DSObject><DSObject bkp:ObjectClass="packageRegistration" bkp:Path="CN=099d339c-30b4-4131-bbea-add75ce16126,CN=Packages,CN=Class Store,%GPO_MACH_DSPATH%" bkp:SourceExpandedPath="CN=099d339c-30b4-4131-bbea-add75ce16126,CN=Packages,CN=Class Store,cn=Machine,cn={39B0CF77-A56C-4FF9-A798-82CBCC97CE91},CN=Policies,CN=System,DC=simfy,DC=arkadium,DC=com" bkp:ReEvaluateFunction="SIProcessPackageObject"><FSObjectFile bkp:Path="%GPO_MACH_FSPATH%\Applications\{5F0EE8C7-5918-41A4-A24D-CC2ED9D1E241}.aas" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{5F0EE8C7-5918-41A4-A24D-CC2ED9D1E241}.aas" bkp:Location="DomainSysvol\GPO\Machine\Applications\{5F0EE8C7-5918-41A4-A24D-CC2ED9D1E241}.aas"/>
+                        <SecurityDescriptor>01 00 04 8c 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 04 00 34 01 0a 00 00 00 00 00 24 00 ff 01 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 00 14 00 94 00 02 00 01 01 00 00 00 00 00 05 0b 00 00 00 00 00 14 00 ff 01 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 05 12 38 00 00 01 00 00 01 00 00 00 8f fd ac ed b3 ff d1 11 b4 1d 00 a0 c9 68 f9 39 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 14 00 02 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 d9 0a 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 2c 96 92 ec 1f 8a 66 dd 49 e8 a9 c6 00 02 00 00 00 12 24 00 ff 00 0f 00 01 05 00 00 00 00 00 05 15 00 00 00 a8 29 87 d6 3d f0 6c 8d 6c 9a 16 21 07 02 00 00 00 12 14 00 94 00 02 00 01 01 00 00 00 00 00 05 09 00 00 00 00 12 14 00 ff 00 0f 00 01 01 00 00 00 00 00 05 12 00 00 00 00 1a 14 00 ff 00 0f 00 01 01 00 00 00 00 00 03 00 00 00 00</SecurityDescriptor>
+                        <DSAttributeBinary bkp:DSAttrName="objectGUID"><DSValue><![CDATA[15 4f b1 1a 23 77 b5 4d b3 67 98 7f 06 83 2a bc]]></DSValue></DSAttributeBinary>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMClassID"><DSValue><![CDATA[00000000-0000-0000-0000-000000000000:0]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMProgID"/>
+                        <DSAttributeMultiString bkp:DSAttrName="fileExtPriority"/>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="localeID"><DSValue><![CDATA[1033]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="machineArchitecture"><DSValue><![CDATA[150996226]]></DSValue></DSAttributeMultiDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberHi"><DSValue><![CDATA[1]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberLo"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="revision"><DSValue><![CDATA[0]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageType"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeDWORD bkp:DSAttrName="packageFlags"><DSValue><![CDATA[2684354832]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeString bkp:DSAttrName="packageName"><DSValue><![CDATA[Zabbix Agent]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptPath"><DSValue><![CDATA[\\simfy.arkadium.com\SysVol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\{5F0EE8C7-5918-41A4-A24D-CC2ED9D1E241}.aas]]></DSValue></DSAttributeString>
+                        <DSAttributeString bkp:DSAttrName="msiScriptName"><DSValue><![CDATA[R]]></DSValue></DSAttributeString>
+                        <DSAttributeDWORD bkp:DSAttrName="msiScriptSize"/>
+                        <DSAttributeMultiString bkp:DSAttrName="url"><DSValue><![CDATA[https://wiki.arkadium.com/]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeString bkp:DSAttrName="setupCommand"/>
+                        <DSAttributeString bkp:DSAttrName="lastUpdateSequence"><DSValue><![CDATA[20170525100918]]></DSValue></DSAttributeString>
+                        <DSAttributeMultiString bkp:DSAttrName="msiFileList"><DSValue><![CDATA[0:\\arkadium.com\DFS\DistributionPoint\Zabbix Agent\Zabbix Agent KRD.msi]]></DSValue></DSAttributeMultiString>
+                        <DSAttributeMultiString bkp:DSAttrName="categories"/>
+                        <DSAttributeMultiString bkp:DSAttrName="canUpgradeScript"/>
+                        <DSAttributeDWORD bkp:DSAttrName="installUiLevel"><DSValue><![CDATA[5]]></DSValue></DSAttributeDWORD>
+                        <DSAttributeBinary bkp:DSAttrName="msiScript"/>
+                        <DSAttributeString bkp:DSAttrName="displayName"><DSValue><![CDATA[Zabbix Agent]]></DSValue></DSAttributeString>
+                        <DSAttributeBinary bkp:DSAttrName="productCode"><DSValue><![CDATA[04 0c 49 13 a7 d4 cb 42 bc f1 7c 3c ff a4 2c 50]]></DSValue></DSAttributeBinary>
+                        <DSAttributeBinary bkp:DSAttrName="upgradeProductCode"><DSValue><![CDATA[8c b3 8e 28 79 2f 57 46 89 cb 05 a0 cf f2 e0 af]]></DSValue></DSAttributeBinary>
+                        <DSAttributeString bkp:DSAttrName="Vendor"/>
+                    </DSObject>
+                        <SecurityDescriptor/>
+                        <DSAttributeBinary bkp:DSAttrName="objectGUID"/>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMClassID"/>
+                        <DSAttributeMultiString bkp:DSAttrName="cOMProgID"/>
+                        <DSAttributeMultiString bkp:DSAttrName="fileExtPriority"/>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="localeID"/>
+                        <DSAttributeMultiDWORD bkp:DSAttrName="machineArchitecture"/>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberHi"/>
+                        <DSAttributeDWORD bkp:DSAttrName="versionNumberLo"/>
+                        <DSAttributeDWORD bkp:DSAttrName="revision"/>
+                        <DSAttributeDWORD bkp:DSAttrName="packageType"/>
+                        <DSAttributeDWORD bkp:DSAttrName="packageFlags"/>
+                        <DSAttributeString bkp:DSAttrName="packageName"/>
+                        <DSAttributeString bkp:DSAttrName="msiScriptPath"/>
+                        <DSAttributeString bkp:DSAttrName="msiScriptName"/>
+                        <DSAttributeDWORD bkp:DSAttrName="msiScriptSize"/>
+                        <DSAttributeMultiString bkp:DSAttrName="url"/>
+                        <DSAttributeString bkp:DSAttrName="setupCommand"/>
+                        <DSAttributeString bkp:DSAttrName="lastUpdateSequence"/>
+                        <DSAttributeMultiString bkp:DSAttrName="msiFileList"/>
+                        <DSAttributeMultiString bkp:DSAttrName="categories"/>
+                        <DSAttributeMultiString bkp:DSAttrName="canUpgradeScript"/>
+                        <DSAttributeDWORD bkp:DSAttrName="installUiLevel"/>
+                        <DSAttributeBinary bkp:DSAttrName="msiScript"/>
+                        <DSAttributeString bkp:DSAttrName="displayName"/>
+                        <DSAttributeBinary bkp:DSAttrName="productCode"/>
+                        <DSAttributeBinary bkp:DSAttrName="upgradeProductCode"/>
+                        <DSAttributeString bkp:DSAttrName="Vendor"/>
+                    </DSObject>
+                </DSObject>
+                <DSAttributeDWORD bkp:DSAttrName="appSchemaVersion"><DSValue><![CDATA[1740]]></DSValue></DSAttributeDWORD>
+                <DSAttributeString bkp:DSAttrName="extensionName"><DSValue><![CDATA[Zabbix Agent Install]]></DSValue></DSAttributeString>
+                <DSAttributeString bkp:DSAttrName="description"><DSValue><![CDATA[Application Store]]></DSValue></DSAttributeString>
+                <DSAttributeExpandedString bkp:DSAttrName="displayName">
+                    <DSValue>LDAP://%GPO_DSPATH%</DSValue>
+                </DSAttributeExpandedString>
+            </DSObject>
+        </GroupPolicyExtension>
+    <GroupPolicyExtension bkp:ID="{F15C46CD-82A0-4C2D-A210-5D0D3182A418}" bkp:DescName="Unknown Extension"><FSObjectDir bkp:Path="%GPO_MACH_FSPATH%\Applications" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications" bkp:Location="DomainSysvol\GPO\Machine\Applications"/><FSObjectFile bkp:Path="%GPO_MACH_FSPATH%\Applications\ADE.CFG" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Applications\ADE.CFG" bkp:Location="DomainSysvol\GPO\Machine\Applications\ADE.CFG"/><FSObjectDir bkp:Path="%GPO_MACH_FSPATH%\Preferences" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Preferences" bkp:Location="DomainSysvol\GPO\Machine\Preferences"/><FSObjectDir bkp:Path="%GPO_MACH_FSPATH%\Preferences\Services" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Preferences\Services" bkp:Location="DomainSysvol\GPO\Machine\Preferences\Services"/><FSObjectFile bkp:Path="%GPO_MACH_FSPATH%\Preferences\Services\Services.xml" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Preferences\Services\Services.xml" bkp:Location="DomainSysvol\GPO\Machine\Preferences\Services\Services.xml"/><FSObjectDir bkp:Path="%GPO_MACH_FSPATH%\Scripts" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Scripts" bkp:Location="DomainSysvol\GPO\Machine\Scripts"/><FSObjectDir bkp:Path="%GPO_MACH_FSPATH%\Scripts\Shutdown" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Scripts\Shutdown" bkp:Location="DomainSysvol\GPO\Machine\Scripts\Shutdown"/><FSObjectDir bkp:Path="%GPO_MACH_FSPATH%\Scripts\Startup" bkp:SourceExpandedPath="\\krdc2.simfy.arkadium.com\sysvol\simfy.arkadium.com\Policies\{39B0CF77-A56C-4FF9-A798-82CBCC97CE91}\Machine\Scripts\Startup" bkp:Location="DomainSysvol\GPO\Machine\Scripts\Startup"/></GroupPolicyExtension></GroupPolicyObject>
+</GroupPolicyBackupScheme>
