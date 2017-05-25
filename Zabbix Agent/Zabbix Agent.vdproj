@@ -15,12 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_077B2097402945789513CF2C60923674"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_10D08D8852D2478B8342C5D2254781EC"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -95,20 +89,19 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_AD02E6F8A5254576966911D103EFBECF"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_787160B9C23F434E9786B95CE3DF64AE"
             {
-            "Name" = "8:cmd"
+            "Name" = "8:zabbix_agentd.exe"
             "Condition" = "8:"
-            "Object" = "8:_077B2097402945789513CF2C60923674"
+            "Object" = "8:_285ADAB340664CBEBBF4F968F7DE1892"
             "FileType" = "3:2"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:/c \"c:\\Program Files\\Zabbix Agent\\install.bat\""
+            "InstallAction" = "3:2"
+            "Arguments" = "8:-i -c \"c:\\Program Files\\Zabbix Agent\\zabbix_agentd.conf\""
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_39451AD2_6943_43AE_B690_BE25AD3C8418"
+            "Identifier" = "8:_15D8A2B6_B531_4E83_81F6_82D7BDD90BA2"
             "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:"
-            "SourcePath" = "8:C:\\Windows\\System32\\cmd.exe"
             }
             "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_E6A33F7C05FE4C3BBEF66D5727C97371"
             {
@@ -139,26 +132,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_077B2097402945789513CF2C60923674"
-            {
-            "SourcePath" = "8:C:\\Windows\\System32\\cmd.exe"
-            "TargetName" = "8:cmd.exe"
-            "Tag" = "8:"
-            "Folder" = "8:_8ADFE6733F2143BDA701F6B05FA038C5"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_10D08D8852D2478B8342C5D2254781EC"
             {
             "SourcePath" = "8:install.bat"
@@ -187,7 +160,7 @@
             "Folder" = "8:_8ADFE6733F2143BDA701F6B05FA038C5"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
+            "Vital" = "11:FALSE"
             "ReadOnly" = "11:FALSE"
             "Hidden" = "11:FALSE"
             "System" = "11:FALSE"
@@ -335,15 +308,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Zabbix Agent"
-        "ProductCode" = "8:{B59130C8-3C3C-45E5-8BCE-466E7D98587F}"
-        "PackageCode" = "8:{6FC30B46-120A-45AD-B76B-F8D1AC8E7EEE}"
+        "ProductCode" = "8:{6ED7E237-C35A-4533-91B9-682E06FE5551}"
+        "PackageCode" = "8:{1B6531CE-248B-4B90-A701-8ED1964EAD79}"
         "UpgradeCode" = "8:{4D19674C-4620-4873-A99E-F6FBF59E4729}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.5"
         "Manufacturer" = "8:Arkadium"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://wiki.arkadium.com/"
@@ -368,6 +341,118 @@
             {
                 "Keys"
                 {
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_7AD6C6A50F504D198EBD63AAB117D13D"
+                    {
+                    "Name" = "8:SYSTEM"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_2651AF7CEE8D402780BFE2C45070100C"
+                            {
+                            "Name" = "8:CurrentControlSet"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_A5F6206DD8834EE886C89C66F6852851"
+                                    {
+                                    "Name" = "8:services"
+                                    "Condition" = "8:"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "Transitive" = "11:FALSE"
+                                        "Keys"
+                                        {
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_8E83CF3E45CB4822AEC81B9C02DE3B03"
+                                            {
+                                            "Name" = "8:Zabbix Agent"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                }
+                                                "Values"
+                                                {
+                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_0338DB4B24FA4FC9BCD64ABAB42F88AD"
+                                                    {
+                                                    "Name" = "8:ObjectName"
+                                                    "Condition" = "8:"
+                                                    "Transitive" = "11:FALSE"
+                                                    "ValueTypes" = "3:1"
+                                                    "Value" = "8:LocalSystem"
+                                                    }
+                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_2939023DB571492EB0E3E284A651E5F7"
+                                                    {
+                                                    "Name" = "8:Description"
+                                                    "Condition" = "8:"
+                                                    "Transitive" = "11:FALSE"
+                                                    "ValueTypes" = "3:1"
+                                                    "Value" = "8:Provides system monitoring"
+                                                    }
+                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_3FF6B887350B411C80C673C0B83E9C0A"
+                                                    {
+                                                    "Name" = "8:Type"
+                                                    "Condition" = "8:"
+                                                    "Transitive" = "11:FALSE"
+                                                    "ValueTypes" = "3:3"
+                                                    "Value" = "3:16"
+                                                    }
+                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_69F02ED0EADC40DE904F1F8EC426174D"
+                                                    {
+                                                    "Name" = "8:Start"
+                                                    "Condition" = "8:"
+                                                    "Transitive" = "11:FALSE"
+                                                    "ValueTypes" = "3:3"
+                                                    "Value" = "3:2"
+                                                    }
+                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_79FBB1450B2942EBBE62000A331CE2AA"
+                                                    {
+                                                    "Name" = "8:ImagePath"
+                                                    "Condition" = "8:"
+                                                    "Transitive" = "11:FALSE"
+                                                    "ValueTypes" = "3:1"
+                                                    "Value" = "8:\"C:\\Program Files\\Zabbix Agent\\zabbix_agentd.exe\" --config \"c:\\Program Files\\Zabbix Agent\\zabbix_agentd.conf\""
+                                                    }
+                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_95368D0F87CB4AA9B19D0141920B0580"
+                                                    {
+                                                    "Name" = "8:DisplayName"
+                                                    "Condition" = "8:"
+                                                    "Transitive" = "11:FALSE"
+                                                    "ValueTypes" = "3:1"
+                                                    "Value" = "8:Zabbix Agent"
+                                                    }
+                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_9C6A4DC8FE3B42BAB2D92FAF05A97C81"
+                                                    {
+                                                    "Name" = "8:ErrorControl"
+                                                    "Condition" = "8:"
+                                                    "Transitive" = "11:FALSE"
+                                                    "ValueTypes" = "3:3"
+                                                    "Value" = "3:1"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        "Values"
+                                        {
+                                        }
+                                    }
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
                     "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_C0B62FAFFCE248F3B498CCAD6A5E4D8E"
                     {
                     "Name" = "8:Software"

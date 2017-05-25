@@ -89,6 +89,20 @@
     {
         "CustomAction"
         {
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_1177975E4A86409DA247EEF9CB1B0784"
+            {
+            "Name" = "8:zabbix_agentd.exe"
+            "Condition" = "8:"
+            "Object" = "8:_3B810DED923A4FBCB592ED3E650E756F"
+            "FileType" = "3:2"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:-i -c \"c:\\Program Files\\Zabbix Agent\\zabbix_agentd.conf\""
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_16705D0B_7F00_4087_A9A7_3291529426CB"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:"
+            }
             "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_63C8866EB1924ACCAD66DCC6DAB0311F"
             {
             "Name" = "8:zabbix_agentd.exe"
@@ -294,15 +308,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Zabbix Agent"
-        "ProductCode" = "8:{DECE6BA9-1B17-49E4-93EE-2139EBDBE6C0}"
-        "PackageCode" = "8:{F95B0166-8E19-4FDE-A426-FAF3117CA320}"
+        "ProductCode" = "8:{672273DF-2455-4EC7-9F0B-56B10C5FD93D}"
+        "PackageCode" = "8:{8C637DCF-FDF0-4715-8F03-FDEABC080707}"
         "UpgradeCode" = "8:{288EB38C-2F79-4657-89CB-05A0CFF2E0AF}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.1"
+        "ProductVersion" = "8:1.0.5"
         "Manufacturer" = "8:Arkadium"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://wiki.arkadium.com/"

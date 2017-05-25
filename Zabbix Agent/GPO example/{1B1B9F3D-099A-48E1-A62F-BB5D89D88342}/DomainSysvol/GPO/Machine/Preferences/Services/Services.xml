@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NTServices clsid="{2CFB484A-4E96-4b5d-A0B6-093D2F91E6AE}"><NTService clsid="{AB6F0B67-341F-4e51-92F9-005FBFBA1A43}" name="Zabbix Agent" image="2" userContext="0" removePolicy="0" changed="2017-05-25 10:22:50" uid="{B170A8DE-8139-4099-8F13-D3C003AF10FC}"><Properties startupType="AUTOMATIC" serviceName="Zabbix Agent" serviceAction="START" timeout="30"/></NTService>
+</NTServices>
